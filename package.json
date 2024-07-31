@@ -1,0 +1,26 @@
+{
+  "name": "learn_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangdinhtrong/Learn_NodeJs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "blog"
+  ],
+  "author": "hdtrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoangdinhtrong/Learn_NodeJs/issues"
+  },
+  "homepage": "https://github.com/hoangdinhtrong/Learn_NodeJs#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
