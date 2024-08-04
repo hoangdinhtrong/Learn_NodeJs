@@ -1,13 +1,13 @@
 class SitesController {
-    // [GET] /
-    index(req, res) {
-        res.render('home');
-    }
+  // [GET] /
+  index(req, res) {
+    res.render('home');
+  }
 
-    // [GET] /searhc
-    search(req, res) {
-        res.render('search');
-    }
+  // [GET] /searhc
+  search(req, res) {
+    res.render('search');
+  }
 }
 
-module.exports = new SitesController;
+module.exports = new SitesController();
