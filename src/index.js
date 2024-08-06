@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const path = require('path');
 const handlebars = require('express-handlebars');
 const route = require('./routes/index.route');
+const db = require('./config/db/index');
 
 const app = express();
 const port = 3000;
@@ -14,6 +15,8 @@ app.use(express.json());
 
 // HTTP logger
 app.use(morgan('combined'));
+
+db.connect();
 
 // Template engine
 app.engine(
