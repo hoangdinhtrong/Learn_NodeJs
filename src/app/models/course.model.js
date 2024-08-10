@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
 
-const Course = new Schema({
+const Course = new mongoose.Schema({
   name: String,
   description: String,
-  image: Date,
+  image: String,
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
 });
