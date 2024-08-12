@@ -5,6 +5,8 @@ const handlebars = require('express-handlebars');
 const route = require('./routes/index.route');
 const db = require('./config/db/index');
 
+const methodOverride = require('method-override');
+
 const app = express();
 const port = 3000;
 
@@ -18,11 +20,17 @@ app.use(morgan('combined'));
 
 db.connect();
 
+// override with POST having ?_method=DELETE
+app.use(methodOverride('_method'));
+
 // Template engine
 app.engine(
   'hbs',
   handlebars.engine({
     extname: '.hbs',
+    helpers: {
+      sum: (a, b) => a + b,
+    },
   }),
 );
 app.set('view engine', 'hbs');

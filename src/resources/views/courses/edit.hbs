@@ -1,0 +1,26 @@
+<div class="mt4">
+    <h3>Update course</h3>
+    <form method="post" action="/courses/{{data._id}}?_method=PUT">
+        <div class="form-group">
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control" value="{{data.name}}" id="exampleInputName" aria-describedby="emailHelp" name="name" />
+        </div>
+        <div class="form-group">
+            <label for="exampleInputDescription">Description</label>
+            <textarea  class="form-control" id="exampleInputDescription" name="description">{{data.description}}</textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputImage">Image</label>
+            <input type="text" class="form-control" value="{{data.image}}" id="exampleInputImage" name="image" />
+        </div>
+        {{!-- <div class="form-group">
+            <label for="exampleInputSlug">Slug</label>
+            <input type="text" class="form-control" id="exampleInputSlug" name="slug">
+        </div> --}}
+        <div class="form-group">
+            <label for="exampleInputVideoId">VideoId</label>
+            <input type="text" class="form-control" value="{{data.videoId}}" id="exampleInputVideoId" name="videoId" />
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
