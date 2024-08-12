@@ -3,9 +3,13 @@
         {{#each data}}
         <div class="col-sm-6 col-lg-4">
             <div class="card mt-4">
-                <img src="{{image}}" class="card-img-top" alt="...">
+                <a href="/courses/{{slug}}">
+                    <img src="{{image}}" class="card-img-top" alt="..." />
+                </a>
                 <div class="card-body">
-                    <h5 class="card-title">{{name}}</h5>
+                    <a href="/courses/{{slug}}">
+                        <h5 class="card-title">{{name}}</h5>
+                    </a>
                     <p class="card-text">{{description}}</p>
                     <a href="#" class="btn btn-primary">Go course</a>
                 </div>

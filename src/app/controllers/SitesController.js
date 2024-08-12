@@ -5,8 +5,8 @@ class SitesController {
   // [GET] /
   index(req, res, next) {
     Course.find({})
-      .then((data) =>
-        res.render('home', { data: multipleMongooseToObject(data) }),
+      .then((datas) =>
+        res.render('home', { data: multipleMongooseToObject(datas) }),
       )
       .catch(next);
   }
