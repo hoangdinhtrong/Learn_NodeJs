@@ -1,0 +1,5 @@
+2024/08/25 16:48:10	a72e851d-7feb-4a5a-bf24-c84ebeb8ac2a	Error : Not allowed by CORS
+2024/08/26 14:02:06	53548942-8fa4-4935-b56e-d2a89ca1eeac	Error : ENOENT: no such file or directory, stat 'D:\Sources\Learn-NodeJS-Youtube\Express\routes\views\subdir\index.html'
+2024/08/26 14:02:38	cf98e167-a653-4dd2-9c17-750f60386c7b	ForbiddenError : Forbidden
+2024/08/26 14:44:19	dc55d833-06c6-427e-9d48-3ae22dfb0619	Error : ENOENT: no such file or directory, stat 'D:\Sources\Learn-NodeJS-Youtube\Express\routes\views\index.html'
+2024/08/26 14:44:37	4e1deb97-90dc-4a2b-bd87-ce117cd2b314	Error : ENOENT: no such file or directory, stat 'D:\Sources\Learn-NodeJS-Youtube\Express\routes\views\index.html'
